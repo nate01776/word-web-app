@@ -1,0 +1,87 @@
+{
+  "test":
+  [
+    {
+        "type": "noun",
+        "defenition": "Metallurgy",
+        "example": null
+    },
+    {
+        "type": "noun",
+        "defenition": "a procedure intended to establish the quality, performance, or reliability of something, especially before it is taken into widespread use.",
+        "example": "\"both countries carried out nuclear tests in May\""
+    },
+    {
+        "type": "noun",
+        "defenition": "short for ",
+        "example": "\"the first Test against New Zealand\""
+    },
+    {
+        "type": "verb",
+        "defenition": "take measures to check the quality, performance, or reliability of (something), especially before putting it into widespread use or practice.",
+        "example": "\"this range has not been tested on animals\""
+    },
+    {
+        "type": "noun",
+        "defenition": "the shell or integument of some invertebrates and protozoans, especially the chalky shell of a foraminiferan or the tough outer layer of a tunicate.",
+        "example": null
+    }
+  ],
+  "trim":[
+    {
+        "type": "verb",
+        "defenition": "make (something) neat or of the required size or form by cutting away irregular or unwanted parts.",
+        "example": "\"trim the grass using a sharp mower\""
+    },
+    {
+        "type": "verb",
+        "defenition": "decorate (something), typically with contrasting items or pieces of material.",
+        "example": "\"a pair of black leather gloves <b>trimmed with</b> fake fur\""
+    },
+    {
+        "type": "verb",
+        "defenition": "adjust (a sail) to take advantage of the wind.",
+        "example": "\"her jobs include trimming the spinnaker and dealing with the yacht's plumbing\""
+    },
+    {
+        "type": "verb",
+        "defenition": "informal",
+        "example": null
+    },
+    {
+        "type": "verb",
+        "defenition": "informal",
+        "example": null
+    },
+    {
+        "type": "noun",
+        "defenition": "additional decoration, typically along the edges of something and in contrasting colour or material.",
+        "example": "\"a red blazer with gold trim\""
+    },
+    {
+        "type": "noun",
+        "defenition": "an act of cutting something in order to neaten it.",
+        "example": "\"his hair needs a trim\""
+    },
+    {
+        "type": "noun",
+        "defenition": "the state of being in good order or condition.",
+        "example": "\"no one had been there for monthsâeverything was out of trim\""
+    },
+    {
+        "type": "noun",
+        "defenition": "the degree to which an aircraft can be maintained at a constant altitude without any control forces being present.",
+        "example": "\"the pilot's only problem was the need to constantly readjust the trim\""
+    },
+    {
+        "type": "noun",
+        "defenition": "the way in which a ship floats in the water, especially in relation to the fore-and-aft line.",
+        "example": "\"ships' masters had to check trim and stability before departure\""
+    },
+    {
+        "type": "adjective",
+        "defenition": "neat and smart in appearance; in good order.",
+        "example": "\"she kept her husband's clothes neat and trim\""
+    }
+]
+}
