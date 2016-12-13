@@ -9,9 +9,7 @@ class Search extends Component {
     this.state = {
       queryWord:"",
       queryResults:"",
-      displayWord: "",
-      displayType: "",
-      displayDefinition: ""
+      displayWord: ""
     };
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -22,6 +20,7 @@ class Search extends Component {
     let self = this;
     let searchWord = this.state.queryWord;
     let api_key = < Api_key />;
+
     fetch('https://api.pearson.com/v2/dictionaries/ldoce5/entries?headword=' + searchWord + '&apikey=' + api_key.type )
       .then(function(response) {
         return response.json()
@@ -30,14 +29,11 @@ class Search extends Component {
         return jsonResponse.results
       })
       .then(function(results) {
-        let type = results[0].part_of_speech
-        let definition = results[0].senses[0].definition[0]
         self.setState({
           displayWord: searchWord,
-          displayType: type,
-          displayDefinition: definition
+          queryResults: results
         })
-      });
+    });
   }
 
   handleChange(event) {
@@ -58,8 +54,7 @@ class Search extends Component {
         <div>
           <SearchList
             displayWord={this.state.displayWord}
-            displayDefinition={this.state.displayDefinition}
-            displayType={this.state.displayType}
+            queryResults={this.state.queryResults}
           />
         </div>
       </div>
