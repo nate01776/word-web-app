@@ -38,7 +38,7 @@ class Search extends Component {
     this.setState({
       queryWord: event.target.value
     });
-  }
+  };
 
   render() {
     return (
