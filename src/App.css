@@ -1,3 +1,39 @@
-.active {
-  color: red;
+body {
+  background: linear-gradient(to right, #BFDEE2, #4698A4);
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-name {
+  font-family: 'Pacifico', cursive;
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.search-bar {
+  width: 50vw;
+}
+
+.save-link {
+  font-family: 'Roboto', sans-serif;
+  font-style: black;
+  font-size: 18px;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.save-link-active {
+  background-color: rgba(255, 255, 255, .2);
+  border-radius: 5px;
 }

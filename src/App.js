@@ -7,8 +7,8 @@ class App extends Component {
     return (
       <div>
         <div className="header">
-          <Link to="/search">Words</Link>
-          <Link to="/saved" activeClassName="active">Saved</Link>
+          <Link to="/search" className="page-name">Words</Link>
+          <Link to="/saved" activeClassName="save-link-active" className="save-link">Saved</Link>
         </div>
         {this.props.children}
       </div>
