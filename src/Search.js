@@ -20,7 +20,7 @@ class Search extends Component {
     event.preventDefault();
     let self = this;
     let searchWord = this.state.queryWord;
-    let results = "";
+
     fetch('https://api.pearson.com/v2/dictionaries/ldoce5/entries?headword=' + searchWord + '&apikey=LUMBmlGorsNOG9EIGPhASqmdSGcLKFJv')
       .then(function(response) {
         return response.json()
@@ -36,7 +36,7 @@ class Search extends Component {
           displayType: type,
           displayDefinition: definition
         })
-      })
+      });
   }
 
   handleChange(event) {
