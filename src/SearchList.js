@@ -1,8 +1,9 @@
 import React from 'react';
 
 const SearchList = props => {
+  let outputWord = props.displayWord;
   let queryResults = props.queryResults;
-  let outputResults = ""
+  let outputResults = "";
 
   if (queryResults.length !== 0) {
     let i = 0;
@@ -10,9 +11,10 @@ const SearchList = props => {
       let key = i;
       let newDef = "";
       let newType = "";
-      if (query.senses[0].definition[0] !== null) {
-        newDef = query.senses[0].definition[0];
-        newType = query.part_of_speech + " - ";
+
+      if (query.defenition !== null) {
+        newDef = query.defenition;
+        newType = query.type + " - ";
       };
       i ++;
       return (

@@ -20,13 +20,13 @@ class Search extends Component {
     let self = this;
     let searchWord = this.state.queryWord;
     let api_key = < Api_key />;
-
-    fetch('https://api.pearson.com/v2/dictionaries/ldoce5/entries?headword=' + searchWord + '&apikey=' + api_key.type )
+  
+    fetch('https://owlbot.info/api/v1/dictionary/' + searchWord + '?format=json')
       .then(function(response) {
         return response.json()
       })
       .then(function(jsonResponse) {
-        return jsonResponse.results
+        return jsonResponse
       })
       .then(function(results) {
         self.setState({
