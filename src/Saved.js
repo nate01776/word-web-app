@@ -4,7 +4,7 @@ class Saved extends Component {
   render() {
     return (
       <div>
-        <h2>Saved</h2>
+        <h2>Saved Words</h2>
       </div>
     );
   }
