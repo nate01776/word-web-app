@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import SearchForm from './SearchForm'
 import SearchList from './SearchList'
-import Api_key from './config.js'
 
 class Search extends Component {
   constructor(props) {
@@ -19,8 +18,7 @@ class Search extends Component {
     event.preventDefault();
     let self = this;
     let searchWord = this.state.queryWord;
-    let api_key = < Api_key />;
-  
+
     fetch('https://owlbot.info/api/v1/dictionary/' + searchWord + '?format=json')
       .then(function(response) {
         return response.json()
