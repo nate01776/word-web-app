@@ -27,7 +27,7 @@ const SearchList = props => {
 
   return (
     <div>
-      <h1>{props.displayWord}</h1>
+      <h1>{outputWord}</h1>
       {outputResults}
     </div>
   )
