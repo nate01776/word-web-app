@@ -6,19 +6,11 @@ const SearchList = props => {
   let outputResults = "";
 
   function handleSaveWord(word, type, def) {
-    let exportWord = word;
-    let exportType = type;
-    let exportDef = def;
-
-    fetch('/public/api/v1/saved-words.json', {
-      method: 'post',
-      body: JSON.stringify({
-        word: exportWord,
-        type: exportType,
-        defenition: exportDef
-      })
-    })
-  }
+    let exportWord = word.outputWord;
+    let exportArray = type.newType + "//" + def.newDef;
+    localStorage.setItem(exportWord, exportArray);
+    localStorage
+  };
 
   if (queryResults.length !== 0) {
     let i = 0;
