@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import SearchForm from './SearchForm'
 import SearchList from './SearchList'
+import Api_key from './config.js'
 
 class Search extends Component {
   constructor(props) {
@@ -20,8 +21,8 @@ class Search extends Component {
     event.preventDefault();
     let self = this;
     let searchWord = this.state.queryWord;
-
-    fetch('https://api.pearson.com/v2/dictionaries/ldoce5/entries?headword=' + searchWord + '&apikey=LUMBmlGorsNOG9EIGPhASqmdSGcLKFJv')
+    let api_key = < Api_key />;
+    fetch('https://api.pearson.com/v2/dictionaries/ldoce5/entries?headword=' + searchWord + '&apikey=' + api_key.type )
       .then(function(response) {
         return response.json()
       })

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import Saved from './Saved.js';
 import './App.css';
 
 class App extends Component {
