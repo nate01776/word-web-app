@@ -7,13 +7,14 @@ const SearchList = props => {
 
   function handleSaveWord(word, type, def) {
     let exportWord = word.outputWord;
-    let exportArray = type.newType + "//" + def.newDef;
-    localStorage.setItem(exportWord, exportArray);
+    let exportString = type.newType + "//" + def.newDef;
+    localStorage.setItem(exportWord, exportString);
     localStorage
   };
 
   if (queryResults.length !== 0) {
     let i = 0;
+
     outputResults = queryResults.map(query => {
       let key = i;
       let newDef = "";
@@ -23,7 +24,9 @@ const SearchList = props => {
         newDef = query.defenition;
         newType = query.type;
       };
+
       i ++;
+
       return (
         <div key={key}>
           {newType} - {newDef}
