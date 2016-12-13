@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div>
         <div className="header">
-          <Link to="/">Words</Link>
+          <Link to="/search">Words</Link>
           <Link to="/saved" activeClassName="active">Saved</Link>
         </div>
         {this.props.children}
