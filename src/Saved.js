@@ -23,8 +23,8 @@ const Saved = props => {
   })
 
   return (
-    <div>
-      <h2>Saved Words</h2>
+    <div className="saved-container">
+      <h2 className="saved-title">Saved Words</h2>
       {outputWords}
     </div>
   );

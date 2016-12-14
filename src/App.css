@@ -26,14 +26,27 @@ body {
 
 .save-link {
   font-family: 'Roboto', sans-serif;
-  font-style: black;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
   padding: 20px;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .save-link-active {
   background-color: rgba(255, 255, 255, .2);
   border-radius: 5px;
+}
+
+.saved-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+.saved-title {
+
 }
