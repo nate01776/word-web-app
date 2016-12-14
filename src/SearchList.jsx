@@ -13,7 +13,7 @@ const SearchList = props => {
 
   if (queryResults.length !== 0) {
     let i = 0;
-    outputWord = outputWord.charAt(0).toUpperCase() + outputWord.slice(1)
+    outputWord = outputWord.charAt(0).toUpperCase() + outputWord.slice(1);
     outputResults = queryResults.map(query => {
       let key = i;
       let newDef = "";

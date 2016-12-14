@@ -7,20 +7,20 @@ const Saved = props => {
   let x = 0;
 
   for (var n = 0; n < savedWords.length; n++) {
-    let currentWord = savedWords.key(n)
-    savedKeys.push(currentWord)
-  }
+    let currentWord = savedWords.key(n);
+    savedKeys.push(currentWord);
+  };
 
   outputWords = savedKeys.map(keyWord => {
     let key = x;
-    let text = savedWords[keyWord].split("//")
+    let text = savedWords[keyWord].split("//");
     x ++;
     return(
       <div key={key}>
         <h3><span className="saved-word">{keyWord}</span>  <b className="type-word">({text[0]}) - </b>{text[1]}</h3>
       </div>
-    )
-  })
+    );
+  });
 
   return (
     <div className="saved-container">
