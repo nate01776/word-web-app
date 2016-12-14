@@ -5,6 +5,10 @@ I had a great time working on this, and learnt a lot about some parts of React I
 ## Website
 http://pump-attendant-careers-60231.netlify.com
 
+## Running locally
+* Clone repo
+* $npm start
+
 ## ISSUES
 * saving multiple definitions of the same word will overwrite previous saved ones.
 * Access-Control-Allow-Origin Error when not using Chrome plugin (https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en)
