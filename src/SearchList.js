@@ -26,6 +26,9 @@ const SearchList = props => {
 
       if (newType === "suffix") {
         i ++;
+        return (
+          <div></div>
+        )
       } else {
         i ++;
         return (
@@ -37,8 +40,7 @@ const SearchList = props => {
               <button className="result-button" onClick={() => handleSaveWord({outputWord}, {newType}, {newDef})}>Save</button>
             </div>
           </div>
-      )};
-    });
+      )}});
   };
 
   return (

@@ -34,7 +34,7 @@ body {
 }
 
 .search-bar:focus {
-  box-shadow: 0 0 30px #8AD698;
+  box-shadow: 0 0 30px 5px #8AD698;
 }
 
 ::placeholder {
