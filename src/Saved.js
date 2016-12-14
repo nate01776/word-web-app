@@ -17,15 +17,22 @@ const Saved = props => {
     x ++;
     return(
       <div key={key}>
-        <h3>{keyWord} - {text[0]} - {text[1]}</h3>
+        <h3><span className="saved-word">{keyWord}</span>  <b className="type-word">({text[0]}) - </b>{text[1]}</h3>
       </div>
     )
   })
 
   return (
     <div className="saved-container">
-      <h2 className="saved-title">Saved Words</h2>
-      {outputWords}
+      <div>
+        <h2 className="saved-title">Saved Words</h2>
+      </div>
+      <div>
+        <hr />
+      </div>
+      <div>
+        {outputWords}
+      </div>
     </div>
   );
 }

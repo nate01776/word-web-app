@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-  margin: 20px;
+  margin: 2em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -17,7 +17,7 @@ body {
   font-family: 'Pacifico', cursive;
   color: black;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 2em;
 }
 
 .search-bar {
@@ -27,7 +27,7 @@ body {
 .save-link {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1em;
   letter-spacing: 1px;
   padding: 20px;
   text-decoration: none;
@@ -47,6 +47,31 @@ body {
   margin-right: 25vw;
 }
 
-.saved-title {
+.saved-container hr {
+  border: 2px solid black;
+  margin-left: 35%;
+  margin-right: 35%;
+}
 
+.saved-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 3em;
+  margin: 2%;
+}
+
+.saved-container h3 {
+  color: black;
+  font-weight: 200;
+}
+
+.saved-word {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+  margin-right: .25em;
+}
+
+.type-word {
+  font-weight: 600;
 }
