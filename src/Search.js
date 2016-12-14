@@ -17,7 +17,7 @@ class Search extends Component {
   handleFormSubmit(event) {
     event.preventDefault();
     let self = this;
-    let searchWord = this.state.queryWord;
+    let searchWord = this.state.queryWord.toLowerCase();
 
     fetch('https://owlbot.info/api/v1/dictionary/' + searchWord + '?format=json')
       .then(function(response) {

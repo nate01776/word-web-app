@@ -21,7 +21,17 @@ body {
 }
 
 .search-bar {
-  width: 50vw;
+  width: 40vw;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+
+::placeholder {
+  color: black;
 }
 
 .save-link {
