@@ -9,7 +9,6 @@ const SearchList = props => {
     let exportWord = word.outputWord;
     let exportString = type.newType + "//" + def.newDef;
     localStorage.setItem(exportWord, exportString);
-    localStorage
   };
 
   if (queryResults.length !== 0) {
@@ -25,20 +24,25 @@ const SearchList = props => {
         newType = query.type;
       };
 
-      i ++;
-
-      return (
-        <div key={key}>
-          {newType} - {newDef}
-          <button className="test" onClick={() => handleSaveWord({outputWord}, {newType}, {newDef})}>save</button>
-        </div>
-      )
-    })
-  }
+      if (newType === "suffix") {
+        i ++;
+      } else {
+        i ++;
+        return (
+          <div key={key} className="search-result">
+            <div className="result-text">
+              <b>{newType} -</b> {newDef}
+            </div>
+            <div>
+              <button className="result-button" onClick={() => handleSaveWord({outputWord}, {newType}, {newDef})}>Save</button>
+            </div>
+          </div>
+      )};
+    });
+  };
 
   return (
-    <div>
-      <h1>{outputWord}</h1>
+    <div className="search-container">
       {outputResults}
     </div>
   )

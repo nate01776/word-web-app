@@ -4,6 +4,8 @@ body {
 
 .App {
   text-align: center;
+  margin-left: 25vw;
+  margin-right: 25vw;
 }
 
 .header {
@@ -21,17 +23,63 @@ body {
 }
 
 .search-bar {
-  width: 40vw;
+  width: 100%;
   font-size: 1em;
   font-weight: 700;
-  padding: 20px;
   border-radius: 10px;
   border: none;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.search-bar:focus {
+  box-shadow: 0 0 30px #8AD698;
 }
 
 ::placeholder {
   color: black;
+}
+
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3em;
+  text-align: left;
+}
+
+.search-result {
+  margin-top: 2em;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+}
+
+.search-result:hover button {
+  opacity: 100;
+  transition: opacity .2s ease-out;
+}
+
+.result-button {
+  opacity: 0;
+  font-size: 20px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8AD698;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: opacity .1s ease-out;
+  cursor: pointer;
+}
+
+.hide-me {
+  opacity: 0;
 }
 
 .save-link {
