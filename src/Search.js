@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import SearchForm from './SearchForm'
 import SearchList from './SearchList'
-import Request from 'react-http-request';
 
 class Search extends Component {
   constructor(props) {
@@ -19,6 +18,7 @@ class Search extends Component {
     event.preventDefault();
     let self = this;
     let searchWord = this.state.queryWord.toLowerCase();
+
     fetch('https://owlbot.info/api/v1/dictionary/' + searchWord + '?format=json')
       .then(function(response) {
         return response.json()
@@ -32,12 +32,12 @@ class Search extends Component {
           queryResults: results
         })
     });
+    //
     // fetch('https://owlbot.info/api/v1/dictionary/' + searchWord + '?format=json', {
     //   mode: "no-cors",
     //   method: "GET",
     //   headers: {
     //     "Content-Type": "application/json",
-    //     "Vary": "Accept"
     //   }})
     //   .then(function(response) {
     //     return response.json()
