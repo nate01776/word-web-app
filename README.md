@@ -6,7 +6,10 @@ I had a great time working on this, and learnt a lot about some parts of React I
 http://pump-attendant-careers-60231.netlify.com
 
 ## Running locally
-* Clone repo
+* Clone repo and cd into folder
+* npm install
+* bundle install
+* $ruby server.rb
 * $npm start
 
 ## ISSUES
