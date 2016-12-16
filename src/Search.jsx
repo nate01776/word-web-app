@@ -19,12 +19,12 @@ class Search extends Component {
     let self = this;
     let searchWord = this.state.queryWord.toLowerCase();
 
-    fetch("https://owlbot.info/api/v1/dictionary/" + searchWord + "?format=json")
+    fetch("/api/connect/" + searchWord)
       .then(function(response) {
         return response.json()
       })
       .then(function(jsonResponse) {
-        return jsonResponse
+        debugger;
       })
       .then(function(results) {
         self.setState({
