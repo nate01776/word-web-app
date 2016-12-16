@@ -13,7 +13,7 @@ http://pump-attendant-careers-60231.netlify.com
 *  $npm start
 
 ## ISSUES
-* working when running locally - sinatra server does not appear to start on netlify
+* working when running locally - sinatra server does not appear to work on netlify
 * saving multiple definitions of the same word will overwrite previous saved ones.
 
 ## Questions to Answer When Finished
