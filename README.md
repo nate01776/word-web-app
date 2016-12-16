@@ -7,10 +7,10 @@ http://pump-attendant-careers-60231.netlify.com
 
 ## Running locally
 * Clone repo and cd into folder
-* npm install
-* bundle install
-* $ruby server.rb
-* $npm start
+*  $npm install
+*  $bundle install
+*  $ruby server.rb
+*  $npm start
 
 ## ISSUES
 * saving multiple definitions of the same word will overwrite previous saved ones.
