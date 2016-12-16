@@ -19,12 +19,9 @@ class Search extends Component {
     let self = this;
     let searchWord = this.state.queryWord.toLowerCase();
 
-    fetch("https://owlbot.info/api/v1/dictionary/" + searchWord + "?format=json")
+    fetch("/api/connect/" + searchWord)
       .then(function(response) {
         return response.json()
-      })
-      .then(function(jsonResponse) {
-        return jsonResponse
       })
       .then(function(results) {
         self.setState({
@@ -32,25 +29,6 @@ class Search extends Component {
           queryResults: results
         })
     });
-
-    // fetch('https://owlbot.info/api/v1/dictionary/' + searchWord + '?format=json', {
-    //   mode: "cors",
-    //   method: "GET",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   }})
-    //   .then(function(response) {
-    //     return response.json()
-    //   })
-    //   .then(function(jsonResponse) {
-    //     return jsonResponse
-    //   })
-    //   .then(function(results) {
-    //     self.setState({
-    //       displayWord: searchWord,
-    //       queryResults: results
-    //     })
-    // });
   }
 
   handleChange(event) {

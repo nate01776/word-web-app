@@ -2,6 +2,7 @@
   "name": "word-web-app",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:4567",
   "devDependencies": {
     "react-scripts": "0.8.4"
   },
