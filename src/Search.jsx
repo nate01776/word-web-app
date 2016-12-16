@@ -23,34 +23,12 @@ class Search extends Component {
       .then(function(response) {
         return response.json()
       })
-      .then(function(jsonResponse) {
-        debugger;
-      })
       .then(function(results) {
         self.setState({
           displayWord: searchWord,
           queryResults: results
         })
     });
-
-    // fetch('https://owlbot.info/api/v1/dictionary/' + searchWord + '?format=json', {
-    //   mode: "cors",
-    //   method: "GET",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   }})
-    //   .then(function(response) {
-    //     return response.json()
-    //   })
-    //   .then(function(jsonResponse) {
-    //     return jsonResponse
-    //   })
-    //   .then(function(results) {
-    //     self.setState({
-    //       displayWord: searchWord,
-    //       queryResults: results
-    //     })
-    // });
   }
 
   handleChange(event) {
