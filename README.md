@@ -11,7 +11,6 @@ http://pump-attendant-careers-60231.netlify.com
 
 ## ISSUES
 * saving multiple definitions of the same word will overwrite previous saved ones.
-* Access-Control-Allow-Origin Error when not using Chrome plugin (https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en)
 
 ## Questions to Answer When Finished
 1. What technique did you use to handle state management? Why did you choose that approach?<br />
