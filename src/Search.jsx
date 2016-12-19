@@ -19,6 +19,7 @@ class Search extends Component {
     let self = this;
     let searchWord = this.state.queryWord.toLowerCase();
 
+    // great job using fetch instead of JQuery!
     fetch("/api/connect/" + searchWord)
       .then(function(response) {
         return response.json()

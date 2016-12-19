@@ -1,5 +1,9 @@
 import React from 'react'
 
+// This doesn't work properly.  It ouputs all of local storage even things not
+// saved in your specific namespace. Instead of using all of local storage keys
+// for each word I would namespace all your apps saved words into a single key.
+// like localStorage.setItem('word-app', JSON_STRINGIFIED_VERSION_OF_ALL_WORDS)
 const Saved = props => {
   let savedWords = localStorage;
   let savedKeys = [];

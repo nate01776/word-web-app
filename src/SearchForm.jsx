@@ -8,5 +8,6 @@ const SearchForm = props => {
     </form>
   )
 }
+// I would add in prop validations here so people know what props to pass in
 
 export default SearchForm;
