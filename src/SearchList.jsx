@@ -5,6 +5,13 @@ const SearchList = props => {
   let queryResults = props.queryResults;
   let outputResults = "";
 
+  // I would probably actually extract the handling of saving and retrieving
+  // words into a separate utility file and not have it be tied to React
+  // whatsoever.  The API of it would be saveWord(word) and retrieveWords() => [words]
+  // You can use JSON.stringify() and JSON.parse to do the saving and retrieving
+  // and keep everything to a specific namespace.
+  //
+  // This seems more complicated than it needs to be.
   function handleSaveWord(word, type, def) {
     let exportWord = word.outputWord;
     let exportString = type.newType + "//" + def.newDef;
